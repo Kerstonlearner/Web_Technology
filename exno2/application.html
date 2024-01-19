@@ -22,7 +22,7 @@
     <table style="width: 100%" cellpadding="10">
         <tr>
             <th style="text-align: right;">
-                <a href="home.html">MEDIA ELEMENTS</a>
+                <a href="index.html">MEDIA ELEMENTS</a>
             </th>
             <th style="text-align: left;">
                 <a href="application.html" target="_blank">Application form</a>
@@ -47,19 +47,19 @@
                 <tr>
                     <td>
                        <label for="appno">Application NO:</label>
-                       <input type="text" placeholder="URK22AIXXXX" pattern="URK22AI\d{4}" maxlength="11" required>
+                       <input type="text" placeholder="KU2021CSxxxx" pattern="KU2021CS\d{4}" required>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="pass">Password:</label>
-                        <input type="password" placeholder="Enter your password" required maxlength="10">
+                        <input type="password" placeholder="Enter your password" required minlength="10" maxlength="10">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="age">Age:</label>
-                        <input type="text" min="19" max="24" maxlength="3" required>
+                        <input type="number" min="19" max="24" placeholder="19-24" required>
                     </td>
                 </tr>
                 <tr>
@@ -74,7 +74,7 @@
                 <tr>
                     <td>
                         <label for="dob">Date of birth:</label>
-                        <input type="text" id="dob" placeholder="mm-dd-yyyy" pattern="\d{2}-\d{2}\-d{4}" maxlength="12" required>
+                        <input type="date" id="dob" placeholder="mm-dd-yyyy" required>
                     </td>
                 </tr>
                 <tr>
@@ -86,7 +86,7 @@
                 <tr>
                     <td>
                         <label for="mailid">Email:</label>
-                        <input type="text" id="mailid" placeholder="xxxxxxxxxxx.karunya.edu.in" pattern="[a-zA-Z0-9._%+-]+@karunya\.edu\.in" required> 
+                        <input type="email" id="mailid" placeholder="xxxxxxxxxxx.karunya.edu.in" pattern="[a-zA-Z0-9]+@karunya\.edu\.in" required> 
                     </td>
                 </tr>
                 <tr>
@@ -98,7 +98,7 @@
                 <tr>
                     <td>
                         <label for="zip">Zipcode:</label>
-                        <input type="text" name="zipcode" id="zip" placeholder="999999" maxlength="6" required>
+                        <input type="text" name="zipcode" id="zip" placeholder="999999" minlength="6" maxlength="6" required>
                     </td>
                 </tr>
                 <tr>
@@ -129,6 +129,11 @@
                     <td>
                         <label for="file">Upload file:</label>
                         <input type="file" accept=".pdf, .docx, .doc">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <progress max="100" value="50"></progress>50% Uploading Stauts
                     </td>
                 </tr>
                 <tr>
