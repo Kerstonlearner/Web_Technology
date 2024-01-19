@@ -1,0 +1,67 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.footimg-container {
+    background-image: url('../asserts/bg3.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+}
+
+.foot-content {
+    color: #ffffff;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 80, 21, 0.237);
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+}
+
+td {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+th {
+    padding: 10px;
+    font-size: x-large;
+}
+
+tr:nth-child(odd) {
+    background-color: #155424;
+}
+
+tr:nth-child(even) {
+    background-color: #76e859;
+}
+
+tr:hover{
+    background-color: #ffd900;
+    color: #155424;
+}
+
+.itemimg{ 
+    opacity :0.2;
+ }
+
+.itemname:hover + .itemimg{ 
+    opacity: 1;
+}
+
+.itemimg:hover{
+    opacity: 1;
+}
